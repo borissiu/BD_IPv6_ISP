@@ -10,19 +10,23 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+
+    - name: BeautifulSoup
+      run: |
+        pip3 install beautifulsoup4
  
     - name: CT
       run: |
         chmod +x ./CT.py
-        ./CT.py > cl_ISP_CT_v6.txt
+        python3 ./CT.py > cl_ISP_CT_v6.txt
     - name: CU
       run: |
         chmod +x ./CU.py
-        ./CU.py > cl_ISP_CU_v6.txt
+        python3 ./CU.py > cl_ISP_CU_v6.txt
     - name: CM
       run: |
         chmod +x ./CM.py
-        ./CM.py > cl_ISP_CM_v6.txt
+        python3 ./CM.py > cl_ISP_CM_v6.txt
 
     - name: Commit and Push Changes
       id: commit-and-push
