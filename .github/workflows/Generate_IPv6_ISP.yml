@@ -1,1 +1,31 @@
+on:
+  schedule:
+    - cron: '0 12 * * *'
+  workflow_dispatch:
 
+jobs:
+  Generate_IPv6_ISP:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+ 
+    - name: CT
+      run: |
+        ./CT.py > cl_ISP_CT_v6.txt
+    - name: CU
+      run: |
+        ./CU.py > cl_ISP_CU_v6.txt
+    - name: CM
+      run: |
+        ./CM.py > cl_ISP_CM_v6.txt
+
+    - name: Commit and Push Changes
+      id: commit-and-push
+      uses: stefanzweifel/git-auto-commit-action@v4
+    - name: Push changes
+      if: steps.commit.outputs.push == 'true'
+      uses: ad-m/github-push-action@master
+      with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
