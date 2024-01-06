@@ -18,15 +18,15 @@ for row in soup.find('table', id = "asns").tbody.findAll('tr'):
     if ( i % 4 == 0 ):
       v4RouteOrigin = int(td.renderContents().decode().replace(',', ''))
     if ( v4RouteOrigin >= 50 and "Unicom".lower() in name.lower()):
-      # print(asNum, name, v4RouteOrigin)
+      print(asNum, name, v4RouteOrigin)
       v4RouteOrigin = 0
       CU_List.append(asNum)
     if ( v4RouteOrigin >= 50 and ("China Mobile".lower() in name.lower() or "ChinaMobile".lower() in name.lower())):
-      # print(asNum, name, v4RouteOrigin)
+      print(asNum, name, v4RouteOrigin)
       v4RouteOrigin = 0
       CM_List.append(asNum)
     if ( v4RouteOrigin >= 50 and ("ChinaTelecom".lower() in name.lower() or "China Telecom".lower() in name.lower())):
-      # print(asNum, name, v4RouteOrigin)
+      print(asNum, name, v4RouteOrigin)
       v4RouteOrigin = 0
       CT_List.append(asNum)
       
