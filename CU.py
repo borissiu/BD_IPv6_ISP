@@ -1,12 +1,15 @@
 import requests
 from bs4 import BeautifulSoup 
 
-html = requests.get('https://bgp.he.net/AS4837')
-soup = BeautifulSoup(html.text, 'html.parser')
-
+CU_List=['AS4837', 'AS4808', 'AS17621', 'AS136958', 'AS17623', 'AS17622', 'AS140726', 'AS17816', 'AS138421', 'AS133119', 'AS135061', 'AS134542', 'AS140979', 'AS140716', 'AS10206', 'AS140886', 'AS140717', 'AS140707', 'AS139007', 'AS137539', 'AS136959', 'AS134543', 'AS133118']
 print('class-list "cl_ISP_CU_v6" ipv6 file')
-for row in soup.find('table', id = "table_prefixes6").tbody.findAll('tr'):
-  columns = row.find_all('td')
-  for td in columns:
-    if td.a:
-      print(td.a.contents[0])
+
+for item in CU_List:
+  url = 'https://bgp.he.net/' + item
+  html = requests.get(url)
+  soup = BeautifulSoup(html.text, 'html.parser')
+  for row in soup.find('table', id = "table_prefixes6").tbody.findAll('tr'):
+    columns = row.find_all('td')
+    for td in columns:
+      if td.a:
+        print(td.a.contents[0])
