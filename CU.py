@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup 
 
 CU_List = ['AS4837', 'AS4808', 'AS17621', 'AS136958', 'AS17623', 'AS17622', 'AS140726', 'AS17816', 'AS139007', 'AS134543']
+print('class-list "cl_ISP_CU_v6" ipv6 file')
 
 for item in CU_List:
   url = 'https://bgp.he.net/' + item
