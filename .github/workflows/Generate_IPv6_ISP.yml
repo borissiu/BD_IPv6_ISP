@@ -14,7 +14,7 @@ jobs:
     - name: BeautifulSoup
       run: |
         pip3 install beautifulsoup4
-        rm GenerationTime_v6*
+        rm GenerationTime_v6* || true
         touch "GenerationTime_v6-$(date)"
         #echo `date` > time.txt
  
