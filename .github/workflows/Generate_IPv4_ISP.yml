@@ -1,10 +1,10 @@
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '58 21 * * *'
   workflow_dispatch:
 
 jobs:
-  Generate_IPv6_ISP:
+  Generate_IPv4_ISP:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,7 +15,7 @@ jobs:
       run: |
         pip3 install beautifulsoup4
         rm Generation*
-        touch "GenerationTime_v6-$(date)"
+        touch "GenerationTime_v4-$(date)"
         #echo `date` > time.txt
  
     - name: CT
