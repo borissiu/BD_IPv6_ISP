@@ -5,7 +5,7 @@
 #### https://bgp.he.net/country/CN
 + https://bgp.he.net/AS4134#_prefixes6
 + https://bgp.he.net/AS4837#_prefixes6
-+ https://bgp.he.net/AS9808
++ https://bgp.he.net/AS9808#_prefixes6
 
 #### Import Class-list
 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CT_v6.txt
