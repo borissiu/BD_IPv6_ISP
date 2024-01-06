@@ -20,16 +20,16 @@ jobs:
  
     - name: CT
       run: |
-        chmod +x ./CT_v6.py
-        python3 ./CT_v6.py > cl_ISP_CT_v6.txt
+        chmod +x ./CT_v4.py
+        python3 ./CT_v4.py > cl_ISP_CT_v4.txt
     - name: CU
       run: |
-        chmod +x ./CU_v6.py
-        python3 ./CU_v6.py > cl_ISP_CU_v6.txt
+        chmod +x ./CU_v4.py
+        python3 ./CU_v4.py > cl_ISP_CU_v4.txt
     - name: CM
       run: |
-        chmod +x ./CM_v6.py
-        python3 ./CM_v6.py > cl_ISP_CM_v6.txt
+        chmod +x ./CM_v4.py
+        python3 ./CM_v4.py > cl_ISP_CM_v4.txt
 
     - name: Commit and Push Changes
       id: commit-and-push
