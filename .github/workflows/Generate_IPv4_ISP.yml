@@ -14,7 +14,7 @@ jobs:
     - name: BeautifulSoup
       run: |
         pip3 install beautifulsoup4
-        rm Generation*
+        rm GenerationTime_v4*
         touch "GenerationTime_v4-$(date)"
         #echo `date` > time.txt
  
