@@ -16,7 +16,6 @@ import-periodic class-list cl_ISP_CT_v6 https://raw.githubusercontent.com/boriss
 import-periodic class-list cl_ISP_CU_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CU_v6.txt period 300
 import-periodic class-list cl_ISP_CM_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CM_v6.txt period 300
 
-
 #### 
 + China Telecom (AS4134)
 ```
