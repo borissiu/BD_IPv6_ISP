@@ -3,6 +3,9 @@
 
 ### Prefixes Originated  (Not Prefixes Announced)
 #### https://bgp.he.net/country/CN
++ https://bgp.he.net/AS4134#_prefixes4
++ https://bgp.he.net/AS4837#_prefixes4
++ https://bgp.he.net/AS9808#_prefixes4
 + https://bgp.he.net/AS4134#_prefixes6
 + https://bgp.he.net/AS4837#_prefixes6
 + https://bgp.he.net/AS9808#_prefixes6
