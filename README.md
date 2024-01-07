@@ -19,6 +19,19 @@ import-periodic class-list cl_ISP_CU_v6 https://raw.githubusercontent.com/boriss
 import-periodic class-list cl_ISP_CM_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CM_v6.txt period 300  
 
 #### 
+```
+vADC-200-Active#show class-list
+Name                               Type                     IP       Subnet   DNS      String   Location
+cl_ISP_CM_v4                       ipv4                     0        16377    0        0        file
+cl_ISP_CM_v6                       ipv6                     0        8267     0        0        file
+cl_ISP_CT_v4                       ipv4                     0        6336     0        0        file
+cl_ISP_CT_v6                       ipv6                     0        2506     0        0        file
+cl_ISP_CU_v4                       ipv4                     0        5823     0        0        file
+cl_ISP_CU_v6                       ipv6                     0        5330     0        0        file
+Total: 6
+vADC-200-Active#
+```
+
 + China Telecom (IPv4)
 ```
 CT_List = ['AS4134', 'AS4809', 'AS4812', 'AS23724', 'AS4811', 'AS58461', 'AS58542', 'AS4816', 'AS58541', 'AS4835', 'AS140292', 'AS137697', 'AS136195', 'AS133774', 'AS63835', 'AS58539', 'AS141998', 'AS141771', 'AS140553', 'AS140279', 'AS140278', 'AS140276', 'AS140265', 'AS137695', 'AS137694', 'AS137693', 'AS137689', 'AS136190', 'AS136188']
