@@ -32,6 +32,32 @@ Total: 6
 vADC-200-Active#
 ```
 
+```
+vADC-200-Active#show log | inc Classlist
+Jan 07 2024 07:54:29 Info        [PBSLB]:Classlist cl_ISP_CM_v4: loaded into AX.
+Jan 07 2024 07:54:29 Info        [PBSLB]:Classlist cl_ISP_CM_v4: Duplicate IP/Mask 36.138.110.0/24 detected on line 10975.
+Jan 07 2024 07:54:29 Info        [PBSLB]:Classlist cl_ISP_CM_v4: Duplicate IP/Mask 202.46.224.0/22 detected on line 10888.
+Jan 07 2024 07:54:29 Info        [PBSLB]:Classlist cl_ISP_CM_v4: Duplicate IP/Mask 112.33.120.0/24 detected on line 10513.
+Jan 07 2024 07:54:17 Info        [PBSLB]:Classlist cl_ISP_CT_v4: loaded into AX.
+Jan 07 2024 07:54:17 Warning     [PBSLB]:Classlist cl_ISP_CT_v4 Too many log messages already generated. Subsequent messages will not be logged.
+Jan 07 2024 07:54:17 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 211.151.0.0/16 detected on line 3049.
+Jan 07 2024 07:54:17 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 211.99.192.0/19 detected on line 3048.
+Jan 07 2024 07:54:17 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 211.99.160.0/19 detected on line 3047.
+Jan 07 2024 07:54:17 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 210.77.128.0/19 detected on line 3045.
+Jan 07 2024 07:54:17 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 124.250.0.0/15 detected on line 3035.
+Jan 07 2024 07:54:17 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 120.134.0.0/15 detected on line 3023.
+Jan 07 2024 07:54:16 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 120.133.0.0/16 detected on line 3016.
+Jan 07 2024 07:54:16 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 120.132.128.0/17 detected on line 3013.
+Jan 07 2024 07:54:16 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 59.151.0.0/17 detected on line 2975.
+Jan 07 2024 07:54:16 Info        [PBSLB]:Classlist cl_ISP_CT_v4: Duplicate IP/Mask 58.83.128.0/17 detected on line 2974.
+Jan 07 2024 07:54:05 Info        [PBSLB]:Classlist cl_ISP_CU_v4: loaded into AX.
+Jan 07 2024 07:54:05 Info        [PBSLB]:Classlist cl_ISP_CU_v4: Duplicate IP/Mask 103.192.132.0/22 detected on line 1257.
+Jan 07 2024 07:53:55 Info        [PBSLB]:Classlist cl_ISP_CM_v6: loaded into AX.
+Jan 07 2024 07:53:45 Info        [PBSLB]:Classlist cl_ISP_CU_v6: loaded into AX.
+Jan 07 2024 07:53:24 Info        [PBSLB]:Classlist cl_ISP_CT_v6: loaded into AX.
+vADC-200-Active#
+```
+
 + China Telecom (IPv4)
 ```
 CT_List = ['AS4134', 'AS4809', 'AS4812', 'AS23724', 'AS4811', 'AS58461', 'AS58542', 'AS4816', 'AS58541', 'AS4835', 'AS140292', 'AS137697', 'AS136195', 'AS133774', 'AS63835', 'AS58539', 'AS141998', 'AS141771', 'AS140553', 'AS140279', 'AS140278', 'AS140276', 'AS140265', 'AS137695', 'AS137694', 'AS137693', 'AS137689', 'AS136190', 'AS136188']
