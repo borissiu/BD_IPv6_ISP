@@ -1,2 +1,0 @@
-Setup.exe /PrepareAD /OrganizationName:”a10test” /IAcceptExchangeServerLicenseTerms_DiagnosticDataOn
-
