@@ -8,17 +8,12 @@
 + https://bgp.he.net/AS9808#_prefixes6
 
 #### Import Class-list
-import-periodic class-list cl_ISP_CT_v4 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CT_v4.txt period 300
-
-import-periodic class-list cl_ISP_CU_v4 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CU_v4.txt period 300
-
-import-periodic class-list cl_ISP_CM_v4 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CM_v4.txt period 300
-
-import-periodic class-list cl_ISP_CT_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CT_v6.txt period 300
-
-import-periodic class-list cl_ISP_CU_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CU_v6.txt period 300
-
-import-periodic class-list cl_ISP_CM_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CM_v6.txt period 300
+import-periodic class-list cl_ISP_CT_v4 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CT_v4.txt period 300  
+import-periodic class-list cl_ISP_CU_v4 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CU_v4.txt period 300  
+import-periodic class-list cl_ISP_CM_v4 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CM_v4.txt period 300  
+import-periodic class-list cl_ISP_CT_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CT_v6.txt period 300  
+import-periodic class-list cl_ISP_CU_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CU_v6.txt period 300  
+import-periodic class-list cl_ISP_CM_v6 https://raw.githubusercontent.com/borissiu/BD_IPv6_ISP/main/cl_ISP_CM_v6.txt period 300  
 
 #### 
 + China Telecom (IPv4)
